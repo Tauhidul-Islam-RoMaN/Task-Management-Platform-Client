@@ -1,0 +1,38 @@
+[
+    {
+      "profession": "Developers",
+      "benefit_1": "Code efficiently with streamlined project management.",
+      "benefit_2": "Collaborate seamlessly on coding tasks.",
+      "image": "https://i.ibb.co/KDk2Ywm/2.jpg"
+    },
+    {
+      "profession": "Corporate Professionals",
+      "benefit_1": "Enhance workflow management.",
+      "benefit_2": "Facilitate effective team collaboration.",
+      "image": "https://i.ibb.co/423dLCB/3.jpg"
+    },
+    {
+      "profession": "Bankers",
+      "benefit_1": "Track and manage financial tasks effortlessly.",
+      "benefit_2": "Stay organized in a dynamic banking environment.",
+      "image": "https://i.ibb.co/1JzMdjs/4.jpg"
+    },
+    {
+      "profession": "Researchers",
+      "benefit_1": "Organize experiments and research projects.",
+      "benefit_2": "Set and achieve milestones with precision.",
+      "image": "https://i.ibb.co/XbvqbyV/8.jpg"
+    },
+    {
+      "profession": "Students",
+      "benefit_1": "Keep track of assignments and project deadlines.",
+      "benefit_2": "Facilitate effective group projects.",
+      "image": "https://i.ibb.co/VQwTGR2/6.jpg"
+    },
+    {
+      "profession": "Teams",
+      "benefit_1": "Collaborate effortlessly on projects.",
+      "benefit_2": "Boost overall team productivity.",
+      "image": "https://i.ibb.co/X39PGY9/7.jpg"
+    }
+  ]
