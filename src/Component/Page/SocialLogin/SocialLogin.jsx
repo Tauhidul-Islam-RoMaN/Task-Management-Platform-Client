@@ -1,11 +1,11 @@
 import useAuth from "../../Hook/useAuth";
-import { FaGoogle } from "react-icons/fa";
+import { FaGithub, FaGoogle } from "react-icons/fa";
 import useAxiosPublic from "../../Hook/useAxiosPublic";
 import { useLocation, useNavigate } from "react-router-dom";
 
 
 const SocialLogin = () => {
-    const { googleLogin } = useAuth()
+    const { googleLogin, githubLogin } = useAuth()
     const axiosPublic = useAxiosPublic()
     const navigate = useNavigate()
     const location = useLocation()
@@ -37,12 +37,22 @@ const SocialLogin = () => {
             })
 
     }
+    const handleGithubLogin = () => {
+        githubLogin()
+        .then(res => console.log(res.user))
+        .catch(error => console.error(error))
+
+    }
     return (
         <div>
-            <div className="flex items-center justify-center mt-5 mb-10">
+            <div className="flex items-center flex-col gap-5 justify-center mt-5 mb-10">
                 <button onClick={handleGoogleLogin} className="btn w-4/5 hover:bg-[#2f6fa3] hover:text-white">
                     <FaGoogle className="mr-4"></FaGoogle>
                     Google
+                </button>
+                <button onClick={handleGithubLogin} className="btn w-4/5 hover:bg-[#2f6fa3] hover:text-white">
+                    <FaGithub className="mr-4"></FaGithub>
+                    Git Hub
                 </button>
             </div>
         </div>

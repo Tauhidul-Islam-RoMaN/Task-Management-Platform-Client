@@ -17,7 +17,8 @@ const CreateTask = () => {
             description: data.description,
             deadline:data.deadline,
             priority: data.priority,
-            email: user?.email
+            email: user?.email,
+            status: "to-do"
         }
         axiosPublic.post('/tasks', taskInfo)
             .then(res => {
