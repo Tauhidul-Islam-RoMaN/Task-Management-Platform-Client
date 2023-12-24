@@ -2,6 +2,8 @@ import useAuth from "../../Hook/useAuth";
 import { FaGithub, FaGoogle } from "react-icons/fa";
 import useAxiosPublic from "../../Hook/useAxiosPublic";
 import { useLocation, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
+
 
 
 const SocialLogin = () => {
