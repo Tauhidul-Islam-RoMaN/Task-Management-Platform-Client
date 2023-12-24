@@ -41,7 +41,11 @@ const SocialLogin = () => {
     }
     const handleGithubLogin = () => {
         githubLogin()
-        .then(res => console.log(res.user))
+        .then(res => {
+            console.log(res.user)
+            navigate(location?.state ? location?.state : '/')
+
+        })
         .catch(error => console.error(error))
 
     }
