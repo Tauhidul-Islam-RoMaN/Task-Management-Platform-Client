@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import Banner from "../Banner/Banner";
-import { key } from "localforage";
 
 const Home = () => {
 

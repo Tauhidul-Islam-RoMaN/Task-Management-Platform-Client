@@ -9,6 +9,8 @@ import PrivateRoute from './PrivateRoute';
 import DashBoard from '../Layout/DashBoard';
 import Profile from '../DashBoard/Profile';
 import UserDashBoard from '../DashBoard/UserDashBoard';
+import CreateTask from '../DashBoard/CreateTask';
+import UpdateTask from '../DashBoard/UpdateTask';
 
 const myCreatedRoute = createBrowserRouter([
     {
@@ -40,8 +42,17 @@ const myCreatedRoute = createBrowserRouter([
                 element: <Profile></Profile>
             },
             {
+                path:'createtasks',
+                element: <CreateTask></CreateTask>
+            },
+            {
                 path:'userdashboard',
                 element: <UserDashBoard></UserDashBoard>
+            },
+            {
+                path:'tasks/:id',
+                element: <UpdateTask></UpdateTask>,
+                loader: ({params}) => fetch(`http://localhost:5000/tasks/${params.id}`)
             },
         ]
 

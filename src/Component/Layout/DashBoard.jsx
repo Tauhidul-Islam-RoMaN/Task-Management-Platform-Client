@@ -10,8 +10,9 @@ const DashBoard = () => {
                             <ul className="menu flex flex-col md:pt-16 p-4">
                                 <>
                                     <h2 className="text-2xl text-black font-medium"> User Dashboard </h2>
-                                    <li> <NavLink to='/dashboard/profile' className="text-lg text-black">  Profile</NavLink> </li>
+                                    <li> <NavLink to='/dashboard/createtasks' className="text-lg text-black">  Create Tasks </NavLink> </li>
                                     <li> <NavLink to='/dashboard/userdashboard' className="text-lg text-black">  DashBoard </NavLink> </li>
+                                    <li> <NavLink to='/dashboard/profile' className="text-lg text-black">  Profile</NavLink> </li>
                                 </>
                             </ul>
                         }
